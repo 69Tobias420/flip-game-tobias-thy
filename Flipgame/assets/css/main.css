@@ -1,0 +1,103 @@
+@keyframes fancytext {
+  0% {
+    color: green;
+    background-color: red;
+  }
+  25% {
+    color: red;
+    background-color: green;
+  }
+  50% {
+    color: green;
+    background-color: red;
+  }
+  75% {
+    color: red;
+    background-color: green;
+  }
+  100% {
+    color: green;
+    background-color: red;
+  }
+}
+
+@keyframes fancyback {
+  0% {
+    background-color: green;
+  }
+  25% {
+    background-color: red;
+  }
+  50% {
+    background-color: green;
+  }
+  75% {
+    background-color: red;
+  }
+  100% {
+    background-color: green;
+  }
+}
+
+body {
+  animation: fancyback 4s ease infinite;
+  margin: 0;
+  padding: 0;
+}
+
+body h1 {
+  animation: fancytext 2s ease infinite;
+  font-family: cursive;
+  text-align: center;
+}
+
+body h2 {
+  width: 100%;
+  position: absolute;
+  top: 450px;
+  animation: fancytext 2s ease infinite;
+  font-family: cursive;
+  text-align: center;
+}
+
+body #mainGame {
+  margin: 0 auto;
+  display: block;
+  width: 800px;
+  height: 900px;
+  background-color: rgba(128, 128, 128, 0);
+}
+
+body #mainGame .pair1 {
+  background-color: #714bfd;
+}
+
+body #mainGame .pair2 {
+  background-color: #8925a8;
+}
+
+body #mainGame .pair3 {
+  background-color: #d46d28;
+}
+
+body #mainGame .pair4 {
+  background-color: #008f2b;
+}
+
+body #mainGame .pair5 {
+  background-color: #cc0909;
+}
+
+body #mainGame .pair6 {
+  background-color: #f5dc00;
+}
+
+body #mainGame div {
+  background-image: url(../visuals/img/flip-card-backside.jpg);
+  transition: 400ms;
+  padding: 0;
+  margin: 0;
+  display: inline-block;
+  width: 200px;
+  height: 300px;
+}
